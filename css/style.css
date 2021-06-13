@@ -1,0 +1,13 @@
+body {
+  display: flex;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
