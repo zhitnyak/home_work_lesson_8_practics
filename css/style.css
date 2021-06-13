@@ -1,13 +1,44 @@
 body {
   display: flex;
+  justify-content: center;
 }
 .form {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
-.form input,
-.form label {
+.register-form input,
+.login-form input,
+.update-user label {
   display: block;
   margin-bottom: 10px;
   box-sizing: border-box;
+  border-color: black;
+  border-radius: 4px;
+}
+.add_properties {
+  border-color: black;
+  border-radius: 4px;
+}
+
+h2 {
+  text-align: center;
+}
+.btn {
+  margin: auto;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+
+  border: solid;
+  border-radius: 4px;
+  background-color: orange;
+  padding: 15px 37px;
+  text-align: center;
+  justify-content: center;
+}
+.color {
+  border: none;
+  padding: 0;
+  margin: 0;
 }

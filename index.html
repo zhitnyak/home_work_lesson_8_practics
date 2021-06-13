@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <form class="form register form" id="register">
+    <form class="form register-form" id="register">
       <h2>Registration</h2>
       <label for="">
         <input type="text" placeholder="name" name="name" />
@@ -23,7 +23,7 @@
         <input type="password" placeholder="password" name="pass" />
       </label>
       <label for="">
-        <input type="submit" placeholder="submit" />
+        <input class="btn" type="submit" placeholder="submit" />
       </label>
     </form>
     <form class="form login-form" id="login">
@@ -41,40 +41,49 @@
         <input type="password" placeholder="password" name="pass" />
       </label>
       <label for="">
-        <input type="submit" placeholder="Отправить" />
+        <input class="btn" type="submit" placeholder="Отправить" />
       </label>
     </form>
     <form class="form update-user" id="update">
       <h2>Update</h2>
       <label class="user-img">
-        <h3>User img</h3>
-        <input type="file" placeholder="image" />
+        User img
+        <input type="file" placeholder="image" name="file" />
       </label>
       <label for="">
-        <h3>Age</h3>
-        <input type="number" placeholder="age" />
+        <input
+          class="add_properties"
+          type="number"
+          placeholder="age"
+          name="number"
+        />
+        Age
       </label>
       <label for="">
-        <h3>Select type</h3>
-        <select name="" id="">
+        <select class="add_properties" name="select" id="">
+          Select type
           <option value="econom">econom</option>
-          <option value="standart" standart></option>
+          <option value="standart">standart</option>
           <option value="premium" selected>premium</option>
         </select>
       </label>
       <label for="">
-        <h3>Color</h3>
-        <input type="color" placeholder="background color" />
+        <input
+          class="color"
+          type="color"
+          placeholder="background color"
+          name="color"
+        />
+        Color
       </label>
 
       <label for="">
-        <h3>Select type</h3>
-        <input type="submit" placeholder="Отправить" />
+        <input class="btn" type="submit" placeholder="Отправить" />
+        Select type
       </label>
       <label for="">
-        <h3>Range</h3>
-
-        <input type="Range" />
+        Range
+        <input type="range" name="range" />
       </label>
     </form>
     <script src="./js/practic_8.js"></script>

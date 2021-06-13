@@ -14,6 +14,17 @@ class User {
     this.pass = d;
   }
 }
+
+class User2 {
+  constructor(a2, b2, c2, d2, e2) {
+    this.file = a2;
+    this.number = b2;
+    this.select = c2;
+    this.color = d2;
+    this.range = e2;
+  }
+}
+
 const users = [];
 
 formRegster.addEventListener("submit", (evt) => {
@@ -30,7 +41,7 @@ formRegster.addEventListener("submit", (evt) => {
   let jsonUsers = JSON.stringify(users); //формат JSON это строка
 
   //   const myUsers = JSON.parse(localStorage.getItem("users"));
-  //   console.log("isLocaleStorage", myUsers);
+  console.log("isLocaleStorage", myUsers);
   //   console.log(localStorage.getItem("users"));
   const data = localStorage.getItem("users");
   console.log(data);
@@ -69,4 +80,18 @@ formLogin.addEventListener("submit", (evt) => {
       alert("Такой ТИП уже есть");
     }
   });
+});
+formUpdate.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  let file = evt.target.elements.file.value;
+  let number = evt.target.elements.number.value;
+  let select = evt.target.elements.select.value;
+  let color = evt.target.elements.color.value;
+  let range = evt.target.elements.range.value;
+
+  const allNumber = JSON.parse(localStorage.getItem("users"));
+  console.log(allNumber);
+
+  const user = new User2(file, number, select, color, range);
+  console.log(user);
 });
